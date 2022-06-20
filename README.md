@@ -21,7 +21,7 @@ Gin+gRPC+Gorm+Mysql+Redis+Docker+RocketMQ+kong+Consul+Nacos+jaeger+sentinel
 #### Inventory Service
 
 - The CRUD of inventory
-- Using distributed locks, transactions, and  roll back inventory to ensure data consistency
+- Using redis distributed locks, transactions, and  roll back inventory to ensure data consistency
 
 #### Order Service
 
