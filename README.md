@@ -21,12 +21,12 @@ Gin+gRPC+Gorm+Mysql+Redis+Docker+RocketMQ+kong+Consul+Nacos+jaeger+sentinel
 ##### Inventory Service
 
 - The CRUD of inventory
-- Using redis distributed locks, transactions, and  roll back inventory to ensure data consistency
+- Using redis-based **distributed lock**, **transaction**, and  roll back inventory to ensure data consistency
 
 ##### Order Service
 
 - The CRUD of orders and shopping cart
-- Using RocketMQ to realize the distributed transaction among different (order, goods and inventory) services based on eventual consistency of reliable message 
+- Using RocketMQ to realize the **distributed transaction** among different (order, goods and inventory) services based on eventual consistency of reliable message 
 - Using timed task of rollbacking inventory when order is not paid in long time
 
 ##### Userop Service
